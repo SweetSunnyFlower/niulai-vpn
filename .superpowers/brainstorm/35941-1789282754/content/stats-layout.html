@@ -1,0 +1,67 @@
+<h2>统计页布局选哪种？</h2>
+<p class="subtitle">核心信息：上传/下载流量、连接时长；今日按小时，7天/30天按天。</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">A · 纵向仪表盘</div>
+        <div class="mockup-body">
+          <div style="display:flex;gap:8px;margin-bottom:8px">
+            <div class="placeholder" style="flex:1;height:46px">上传</div>
+            <div class="placeholder" style="flex:1;height:46px">下载</div>
+            <div class="placeholder" style="flex:1;height:46px">时长</div>
+          </div>
+          <div class="mock-nav" style="margin-bottom:8px">今日 | 近7天 | 近30天</div>
+          <div class="placeholder" style="height:130px">折线/柱状图</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A · 纵向仪表盘</h3>
+      <p>顶部三个汇总卡，下方时间切换和图表，信息集中。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">B · 分页卡片</div>
+        <div class="mockup-body">
+          <div class="mock-nav" style="margin-bottom:8px">流量 | 时长 | 节点</div>
+          <div style="display:flex;gap:8px;margin-bottom:8px">
+            <div class="placeholder" style="flex:1;height:46px">上传</div>
+            <div class="placeholder" style="flex:1;height:46px">下载</div>
+          </div>
+          <div class="placeholder" style="height:130px">当前维度图表</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B · 分页卡片</h3>
+      <p>按“流量/时长”分页展示，页面更轻，但需要多次切换。</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">C · 摘要 + 可展开明细</div>
+        <div class="mockup-body">
+          <div class="mock-nav" style="margin-bottom:8px">今日 | 近7天 | 近30天</div>
+          <div style="display:flex;gap:8px;margin-bottom:8px">
+            <div class="placeholder" style="flex:1;height:46px">上传</div>
+            <div class="placeholder" style="flex:1;height:46px">下载</div>
+            <div class="placeholder" style="flex:1;height:46px">时长</div>
+          </div>
+          <div class="placeholder" style="height:78px">趋势摘要</div>
+          <div class="placeholder" style="height:44px;margin-top:8px">展开历史明细</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C · 摘要 + 可展开明细</h3>
+      <p>默认清爽，点“展开”看详细图表，适合信息密度较低。</p>
+    </div>
+  </div>
+</div>
